@@ -1,0 +1,95 @@
+/* Навігаційна панель */
+.navbar {
+    background-color: #4C2E2E;
+    padding: 10px;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    color: #B22222;
+}
+
+/* Бокові панелі */
+.sidebar, .rightbar {
+    background-color: #f0f0f0; /* Світло-сірий фон */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.sidebar ul, .rightbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li, .rightbar ul li {
+    margin-bottom: 10px;
+    display: flex; /* Розташування елементів в одному рядку */
+    align-items: center; /* Вертикальне вирівнювання */
+}
+
+.sidebar ul li a, .rightbar ul li a {
+    flex-grow: 1; /* Займає весь простір, щоб текст не перекривав кнопку */
+    padding: 10px;
+    text-decoration: none;
+    color: #000; /* Чорний текст */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover, .rightbar ul li a:hover {
+    background-color: #e74c3c; /* Червоний фон */
+    color: #000; /* Чорний текст */
+    border-radius: 5px;
+}
+
+.bookmark-btn {
+    visibility: hidden; /* Приховуємо кнопку за замовчуванням */
+}
+
+.sidebar ul li:hover .bookmark-btn, 
+.rightbar ul li:hover .bookmark-btn {
+    visibility: visible; /* Відображаємо при наведенні */
+}
+
+.bookmark-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+    display: inline-flex;
+    align-items: center;
+    color: #000; /* Чорний колір іконки */
+    transition: transform 0.2s ease;
+}
+
+.bookmark-btn:hover ion-icon {
+    transform: scale(1.2); /* Легке збільшення іконки */
+}
+
+
+/* Пошук */
+form.d-flex input {
+    border: 2px solid #e74c3c; /* Червона рамка */
+    border-radius: 5px;
+  }
+  
+  form.d-flex input:focus {
+    border-color: #c0392b;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+  }
+  
+  form.d-flex button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+  }
+  
+  form.d-flex button:hover {
+    background-color: #c0392b;
+  }

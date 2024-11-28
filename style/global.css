@@ -1,0 +1,294 @@
+/* Глобальні стилі */
+body {
+  color: #f5f5f5; /* Світлий текст */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding: 20px;
+  background-color: #f0f0f0; /* Такий же колір, як у бокових панелей */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+/* Анімація для навігаційної панелі */
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar:hover {
+  background-color: #c0392b;
+}
+
+/* Анімація для основного контенту */
+.content {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Лінки */
+a {
+  color: #e74c3c;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #c0392b;
+}
+
+/* Стиль іконок для соц-мереж */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+
+/* Розділення блоків у single_news.php */
+.news-section {
+  padding: 15px;
+  background-color: #f0f0f0; /* Фон кольору #f0f0f0 */
+  color: #333; /* Темний текст */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-header {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.news-body {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.news-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border: 3px solid #b03a2e; /* Червона рамка */
+  border-radius: 10px;
+}
+
+.news-body iframe {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border: 3px solid #b03a2e; /* Червона рамка */
+  border-radius: 10px;
+}
+
+.news-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border: 3px solid #b03a2e; /* Червона рамка */
+  border-radius: 10px;
+}
+
+/* Кнопки */
+button {
+  background-color: #e74c3c; /* Червоний */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Популярні новини */
+.popular-news ul, .categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.popular-news li, .categories li {
+  margin-bottom: 5px;
+}
+
+.popular-news li a, .categories li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.popular-news li a:hover, .categories li a:hover {
+  color: #e74c3c;
+}
+
+.news-content img {
+  border: 2px solid #ff0000a8; border-radius: 15px; padding: 5px;
+  width: 100%;
+ }
+
+ .related-block ul {
+  list-style: none;
+ }
+
+ .comments-section {
+  margin-bottom: 20px; /* Додає відстань між коментарями та наступним блоком/краєм сторінки */
+}
+
+/* Вирівнювання дати в блоці коментаря */
+.comment-block .comment-header {
+  display: flex; /* Робимо контейнер гнучким */
+  justify-content: space-between; /* Розділяємо елементи: один зліва, інший справа */
+  align-items: center; /* Вирівнюємо елементи по вертикалі */
+}
+
+.comment-header img {
+  margin-right: 10px; /* Відступ між аватаром та текстом */
+}
+
+.comment-header .comment-date {
+  color: #999; /* М'який колір для дати */
+  font-size: 0.9em; /* Зменшений розмір шрифту для дати */
+}
+
+ .related-block a, .comments-block a {
+  list-style: none;
+  color: black;
+  text-decoration:none;
+ }
+
+ .related-block a:hover, .comments-block a:hover {
+  color: red;
+ }
+
+ /* Стиль результатів пошуку */
+.news-title {
+  text-decoration: none;
+  color: #e74c3c;
+}
+
+.news-title:hover {
+  color: #c0392b;
+}
+
+.container h3 {
+  color: #000000;
+  font-weight: bold;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Простір між блоками */
+}
+
+.news-section {
+  padding: 15px;
+  background-color: #ffffff; /* Білий фон для кожного блоку */
+  color: #333; /* Темний текст */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль заголовку новини */
+.news-header-block h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #000000; /* Червоний акцент */
+}
+
+/* Стиль новин по темі */
+.related-news-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-news-block li a {
+  text-decoration: none;
+  color: #e74c3c;
+  transition: color 0.3s;
+}
+
+.related-news-block a {
+  text-decoration: none;
+  color: #e74c3c;
+  transition: color 0.3s;
+}
+
+.related-news-block li a:hover {
+  color: #c0392b;
+}
+
+.related-news-block a:hover {
+  color: #c0392b;
+}
+
+.add-comment-block a {
+  text-decoration: none;
+  background-color: #e74c3c;
+  transition: color 0.3s;
+}
+
+.add-comment-block button {
+  text-decoration: none;
+  background-color: white;
+  color: #e74c3c;
+  border-color: black;
+  transition: color 0.3s;
+}
+
+.add-comment-block button:hover {
+  text-decoration: none;
+  background-color: #e74c3c;
+  color: white;
+  border-color: black;
+  transition: color 0.3s;
+}
+
+.add-comment-block a:hover {
+  color: #c0392b;
+}
+
+/* Стиль коментарів */
+.add-comment-block form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.comment-block {
+  border-left: 4px solid #e74c3c; /* Червона лінія */
+  padding: 10px;
+  margin-top: 10px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+button.btn-secondary {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+button.btn-secondary ion-icon {
+  font-size: 1.5em;
+  color: black; /* Виберіть колір на свій розсуд */
+}
